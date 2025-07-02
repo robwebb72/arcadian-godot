@@ -8,7 +8,6 @@ public partial class Starfield : Node2D
 
 	public void Initialise(Vector2 screenSize)
 	{
-		GD.Print("Initializing Starfield");
 		_screenSize = screenSize;
 		for (var i = 0; i < 200; i++)
 		{
@@ -19,9 +18,6 @@ public partial class Starfield : Node2D
 	}
 
 	// Called when the node enters the scene tree for the first time.
-
-
-
 	public override void _Ready()
 	{
 	}

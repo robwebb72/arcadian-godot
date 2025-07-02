@@ -13,7 +13,6 @@ public partial class Star : Sprite2D
 			(int)GD.RandRange(0, screenSize.X),
 			(int)GD.RandRange(0, screenSize.Y)
 		);
-		GD.Print($"({Position.X},{Position.Y})");
 		ResetSpeed();
 	}
 
