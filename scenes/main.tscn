@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://7qx4h3phbxed"]
+
+[ext_resource type="Script" path="res://scenes/Main.cs" id="1_v3j44"]
+[ext_resource type="PackedScene" uid="uid://bts77gj8qmojv" path="res://scenes/starfield.tscn" id="2_csudg"]
+[ext_resource type="PackedScene" uid="uid://dxgxtn614ewxx" path="res://scenes/player.tscn" id="3_ubpy6"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_v3j44")
+
+[node name="Starfield" parent="." instance=ExtResource("2_csudg")]
+
+[node name="Player" parent="." instance=ExtResource("3_ubpy6")]

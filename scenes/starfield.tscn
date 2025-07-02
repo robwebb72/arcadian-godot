@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bts77gj8qmojv"]
+
+[ext_resource type="Script" path="res://scenes/Starfield.cs" id="1_mxobs"]
+[ext_resource type="PackedScene" uid="uid://c8jv8tyvftork" path="res://scenes/star.tscn" id="2_phgny"]
+
+[node name="Starfield" type="Node2D"]
+script = ExtResource("1_mxobs")
+Stars = ExtResource("2_phgny")
