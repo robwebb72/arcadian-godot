@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxgxtn614ewxx"]
+[gd_scene load_steps=7 format=3 uid="uid://dxgxtn614ewxx"]
 
 [ext_resource type="Texture2D" uid="uid://cvbp3wwud3imv" path="res://assets/player/ship.png" id="1_esle6"]
 [ext_resource type="Script" path="res://scenes/Player.cs" id="1_go1c0"]
 [ext_resource type="Texture2D" uid="uid://cw6w4ma2dfkde" path="res://assets/player/ship-left.png" id="2_fdowa"]
 [ext_resource type="Texture2D" uid="uid://dhipnbeced1w8" path="res://assets/player/ship-right.png" id="3_a12bs"]
+[ext_resource type="PackedScene" uid="uid://cqggkxe23dbde" path="res://scenes/plume.tscn" id="5_k002l"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q3gks"]
 animations = [{
@@ -38,6 +39,12 @@ script = ExtResource("1_go1c0")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_q3gks")
 animation = &"right"
+
+[node name="EnginePlume" parent="." instance=ExtResource("5_k002l")]
+position = Vector2(3, 15)
+
+[node name="EnginePlume2" parent="." instance=ExtResource("5_k002l")]
+position = Vector2(-3, 15)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 build_mode = 1

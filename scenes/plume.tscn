@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqggkxe23dbde"]
+
+[sub_resource type="Gradient" id="Gradient_7knpv"]
+offsets = PackedFloat32Array(0, 0.258065, 0.704301, 1)
+colors = PackedColorArray(1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0.4, 1, 0, 0, 0)
+
+[node name="EnginePlume" type="CPUParticles2D"]
+amount = 240
+lifetime = 0.2
+direction = Vector2(0, 1)
+spread = 5.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 240.0
+initial_velocity_max = 240.0
+color_ramp = SubResource("Gradient_7knpv")
