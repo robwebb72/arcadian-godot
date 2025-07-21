@@ -25,6 +25,10 @@ window/size/resizable=false
 
 project/assembly_name="arcadian"
 
+[global_group]
+
+asteroids=""
+
 [rendering]
 
 environment/defaults/default_clear_color=Color(0, 0, 0, 1)

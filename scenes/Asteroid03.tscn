@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://64b2r8vrkrax"]
+
+[ext_resource type="Texture2D" uid="uid://cfaewha8imb2j" path="res://assets/asteroids/asteroid03.png" id="1_kxoqp"]
+
+[node name="Asteroid03" type="Area2D" groups=["asteroids"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_kxoqp")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." groups=["asteroids"]]
+polygon = PackedVector2Array(-23, -35, -3, -24, 26, -34, 33, -28, 27, -9, 35, 0, 37, 19, 23, 34, 3, 20, -16, 27, -17, 36, -33, 30, -36, 0, -17, -14)
